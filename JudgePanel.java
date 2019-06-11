@@ -10,18 +10,18 @@ public class JudgePanel
     */
    public JudgePanel(String someNames, String someCountries, boolean aVerdict)
    {
-   this.judgeNames = someNames;
-   this.judgeCountries = someCountries;
-   this.passCandidate = aVerdict;
+      this.judgeNames = someNames;
+      this.judgeCountries = someCountries;
+      this.passCandidate = aVerdict;
    }
    /** This constructor assumes you only know the judges' names, but not
     * their country of origin or their decision
     */
    public JudgePanel(String someNames)
    {
-   this.judgeNames = someNames;
-   this.judgeCountries = null; // unknown
-   this.passCandidate = false; // assume panel fails candidate by default
+      this.judgeNames = someNames;
+      this.judgeCountries = null; // unknown
+      this.passCandidate = false; // assume panel fails candidate by default
    }
    /**Methods*/
    /** Setter for the judges' names */
@@ -59,16 +59,16 @@ public class JudgePanel
     * 'unknown countries' */
    public String toString()
    {
-   String tempCountries;
-   if (this.judgeCountries == null)
-   {
-      tempCountries = "unknown countries";
-   }
-   else
-   {
-      tempCountries = this.judgeCountries;
-   }
-   return this.judgeNames + " from " + tempCountries ;
+      String tempCountries;
+      if (this.judgeCountries == null)
+      {
+         tempCountries = "unknown countries";
+      }
+      else
+      {
+         tempCountries = this.judgeCountries;
+      }
+      return this.judgeNames + " from " + tempCountries ;
    }
 }
       
